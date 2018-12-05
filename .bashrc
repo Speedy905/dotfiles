@@ -31,10 +31,18 @@ alias updatealias='source ~/.bashrc'
 # Or i'll learn to use another editor
 alias openbash='nano ~/.bashrc'
 
+
+##############
+# Git Stuff  #
+##############
+
 # Clones github repo
 getrepo() {
 	git clone "$1"
 }
+
+# Updates the repo
+alias repoup='git pull'
 
 #######################
 #THIS PART IS DOTFILES#
