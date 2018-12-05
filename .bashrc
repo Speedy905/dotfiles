@@ -47,19 +47,6 @@ alias config='/usr/bin/git --git-dir=/home/karlo/.cfg/ --work-tree=/home/karlo'
 # Pulls from remote
 alias pulldot='config pull dotfiles master'
 
-###############################
-#LAPTOP VERSION               #
-#Original alias doesn't work. #
-#Will figure it out.          #
-###############################
-# Pulls from remote
-alias pulldotlap='config pull origin master'
-
-# Pushes to remote
-alias pushdotlap='config push -f origin master'
-
-##############################
-
 # Pushes to remote
 alias pushdot='config push -f dotfiles master'
 
@@ -74,3 +61,17 @@ adddot() {
 #commitdot() {
 #	config commit -m "$1"
 #}
+
+
+###############################
+#LAPTOP VERSION               #
+#Original alias doesn't work. #
+#Will figure it out.          #
+###############################
+# Pulls from remote
+alias pulldotlap='config pull origin master'
+
+# Pushes to remote
+alias pushdotlap='config push -f origin master'
+
+##############################
