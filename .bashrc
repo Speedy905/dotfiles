@@ -34,6 +34,9 @@ getrepo() {
 	git clone "$1"
 }
 
-#Update/create dotfiles
+#Alias for git.
 #Yay backups
 alias config='/usr/bin/git --git-dir=/home/karlo/.cfg/ --work-tree=/home/karlo'
+
+#Pulls from remote
+alias pulldot='config pull dotfiles master'
