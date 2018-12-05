@@ -53,7 +53,8 @@ adddot() {
 	config add "$1"
 }
 
+#Doesn't work. will figure it out.
 #Commits. Yay
-commitdot() {
-	config commit -m "$1"
-}
+#commitdot() {
+#	config commit -m "$1"
+#}
