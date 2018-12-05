@@ -58,10 +58,11 @@ alias pulldotlap='config pull origin master'
 # Pushes to remote
 alias pushdotlap='config push -f origin master'
 
+##############################
+
 # Pushes to remote
 alias pushdot='config push -f dotfiles master'
 
-#######################
 
 # Adds file for commiting
 adddot() {
