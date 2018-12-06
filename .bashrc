@@ -101,8 +101,6 @@ alias vpnoff='windscribe disconnect'
 #Package management#
 ####################
 
-#Under construction
-
 # Install stuff
 install() {
 	sudo pacman -S "$@"
