@@ -44,6 +44,8 @@ getrepo() {
 # Updates the repo
 alias repoup='git pull'
 
+############################################
+
 #######################
 #THIS PART IS DOTFILES#
 #######################
@@ -81,11 +83,32 @@ alias pulldotlap='config pull origin master'
 # Pushes to remote
 alias pushdotlap='config push -f origin master'
 
-##############################
+###############################################
 
+###########
+#VPN STUFF#
+###########
 
-#Connects to vpn server
+# Connects to vpn server
 alias vpnon='windscribe connect'
 
-#Discconnects from vpn server
+# Discconnects from vpn server
 alias vpnoff='windscribe disconnect'
+#####################################
+
+####################
+#Package management#
+####################
+
+#Under construction
+
+# Install stuff
+install() {
+	sudo pacman -S "$*"
+}
+
+# Remove stuff
+remove() {
+	sudo pacman -R "$*"
+}
+#####################################
