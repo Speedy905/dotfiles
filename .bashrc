@@ -26,11 +26,21 @@ alias mirrorupdate='sudo reflector --country Canada --age 12 --protocol https --
 alias updatealias='source ~/.bashrc'
 
 # Open bashrc
-# And yes I know its nano. Shut up.
-# I'll learn vim. Someday.
-# Or i'll learn to use another editor
-alias openbash='nano ~/.bashrc'
-
+# A function that checks existance of either programs
+# If one of them exists, it opens one of them
+# If neither of them exists, it opens nano (yes ik. shut up)
+function openbash() {
+	package1=geany
+	package2=kate
+	
+	if pacman -Qi $package1 &> /dev/null; 
+		then geany ~/.bashrc
+	elif pacman -Qi $package2 &> /dev/null; 
+		then kate ~/.bashrc
+	else 
+		nano ~/.bashrc
+	fi
+}
 
 ##############
 # Git Stuff  #
