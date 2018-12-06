@@ -42,9 +42,9 @@ function openbash() {
 	fi
 }
 
-##############
-# Git Stuff  #
-##############
+#############
+#Git Stuff  #
+#############
 
 # Clones github repo
 getrepo() {
