@@ -82,3 +82,10 @@ alias pulldotlap='config pull origin master'
 alias pushdotlap='config push -f origin master'
 
 ##############################
+
+
+#Connects to vpn server
+alias vpnon='windscribe connect'
+
+#Discconnects from vpn server
+alias vpnoff='windscribe disconnect'
