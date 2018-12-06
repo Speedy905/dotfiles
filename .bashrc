@@ -105,11 +105,11 @@ alias vpnoff='windscribe disconnect'
 
 # Install stuff
 install() {
-	sudo pacman -S "$*"
+	sudo pacman -S "$@"
 }
 
 # Remove stuff
 remove() {
-	sudo pacman -R "$*"
+	sudo pacman -R "$@"
 }
 #####################################
