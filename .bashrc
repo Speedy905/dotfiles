@@ -94,6 +94,7 @@ alias vpnon='windscribe connect'
 
 # Discconnects from vpn server
 alias vpnoff='windscribe disconnect'
+
 #####################################
 
 ####################
