@@ -20,7 +20,9 @@ alias driveupdate='~/my_gits/randomscripts/google-drive-sync.sh'
 alias updatewithyay='yay -Syu --devel --timeupdate'
 
 # Update mirrorlist via reflector
-alias mirrorupdate='sudo reflector --country Canada --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist'
+alias mirrorupdate='sudo reflector --country Canada --age 12 \
+					--protocol https --sort rate  \
+					--save /etc/pacman.d/mirrorlist'
 
 #Update bashrc
 alias updatealias='source ~/.bashrc'
@@ -62,7 +64,8 @@ alias repoup='git pull'
 
 # Alias for git.
 # Yay backups
-alias config='/usr/bin/git --git-dir=/home/karlo/.cfg/ --work-tree=/home/karlo'
+alias config='/usr/bin/git --git-dir=/home/karlo/.cfg/ \
+				--work-tree=/home/karlo'
 
 # Pulls from remote
 alias pulldot='config pull dotfiles master'
