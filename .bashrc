@@ -128,6 +128,9 @@ remove() {
 # Launch neofetch for every new terminal
 neofetch
 
+# Welcome message lol
+echo "Hello $USER."
+
 # Powerline shell 
 function _update_ps1() {
     PS1=$(powerline-shell $?)
