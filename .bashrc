@@ -124,3 +124,6 @@ remove() {
 	sudo pacman -R "$@"
 }
 #####################################
+
+# Launch neofetch for every new terminal
+neofetch
