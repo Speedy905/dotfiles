@@ -17,7 +17,7 @@ alias driveupdate='~/my_gits/randomscripts/google-drive-sync.sh'
 # alias installwifi='sudo dkms install -m rtl8814au -v 4.3.21'
 
 # Perform system update with yay
-alias updatewithyay='yay -Syu --devel --timeupdate'
+alias sysupdate='yay -Syu'
 
 # Update mirrorlist via reflector
 alias mirrorupdate='sudo reflector --country Canada --age 12 \
