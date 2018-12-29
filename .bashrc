@@ -140,3 +140,17 @@ if [[ $TERM != linux && ! $PROMPT_COMMAND =~ _update_ps1 ]]; then
     PROMPT_COMMAND="_update_ps1; $PROMPT_COMMAND"
 fi
 
+#####################################
+
+# Checks battery stat
+# Only works in laptop
+
+function battstat() {
+	tlppack=tlp
+	
+	if pacman -Qi $tlppack &> /dev/null; 
+		then sudo tlp stat | tail -13
+	else 
+		echo "TLP not installed or not in laptop"
+	fi
+}
