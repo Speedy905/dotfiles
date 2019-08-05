@@ -10,7 +10,7 @@ alias ls='ls --color=auto'
 PS1='[\u@\h \W]\$ '
 
 # Sync googledrive via grive2
-alias driveupdate='~/my_gits/randomscripts/google-drive-sync.sh'
+#alias driveupdate='~/my_gits/randomscripts/google-drive-sync.sh'
 
 # Installed via dkms, should be working through aur now
 # THIS SHOULD ONLY BE USED FOR PC.
